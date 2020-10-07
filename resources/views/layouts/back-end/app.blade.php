@@ -86,9 +86,6 @@
 <!-- Sidebar jquery-->
 <script src="{{asset('assets/back-end/js/sidebar-menu.js')}}"></script>
 
-<!--chartist js-->
-<script src="{{asset('assets/back-end/js/chart/chartist/chartist.js')}}"></script>
-
 <!--chartjs js-->
 <script src="{{asset('assets/back-end/js/chart/chartjs/chart.min.js')}}"></script>
 
@@ -114,8 +111,6 @@
 <!--Customizer admin-->
 <script src="{{asset('assets/back-end/js/admin-customizer.js')}}"></script>
 
-<!--dashboard custom js-->
-<script src="{{asset('assets/back-end/js/dashboard/default.js')}}"></script>
 
 <!--right sidebar js-->
 <script src="{{asset('assets/back-end/js/chat-menu.js')}}"></script>

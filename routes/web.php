@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Backend\DashboardController;
+use App\Http\Controllers\Backend\CategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,6 +23,9 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::group(['namespace' => 'Backend','as' => 'backend.','middleware' => ['auth']], function () {
+Route::group(['as' => 'backend.','middleware' => ['auth']], function () {
     Route::get('/dashboard', [DashboardController::class,'index'])->name('dashboard');
+    Route::resources([
+        'category' => CategoryController::class,
+    ]);
 });

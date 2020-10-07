@@ -963,5 +963,8 @@
 @endsection
 
 @push('js')
-    
+<!--chartist js-->
+<script src="{{asset('assets/back-end/js/chart/chartist/chartist.js')}}"></script>
+<!--dashboard custom js-->
+<script src="{{asset('assets/back-end/js/dashboard/default.js')}}"></script>
 @endpush
